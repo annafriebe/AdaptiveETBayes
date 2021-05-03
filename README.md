@@ -16,6 +16,7 @@ packages:
 depmixS4 version 1.4-2
 data.tree version 1.0.0
 MASS version 7.3.53
+ggplot version 3.3.2
 
 # Python-related info
 Python and GpyOpt used for preprocessing step 2 (find points of model change)
@@ -35,7 +36,7 @@ conda env create -f environment.yml
 ```
 
 # Generate simulated sequences
-Run from RStudio in AdaptiveETBayes project
+Source from RStudio in AdaptiveETBayes project
 
 createEvalSequences/simulateMarkovClusterSequences.R
 
@@ -61,7 +62,7 @@ Result found in data/splitIndicesSequencesPreprocess
 # Preprocessing step 3: Cluster segments + adaptive step
 Adaptive step, full process (FP)
 
-Run from RStudio in AdaptiveETBayes project
+Source from RStudio in AdaptiveETBayes project
 
 preprocessing3clusterAdaptive/clusterSequencesGLRSlidingWindowFP.R
 
@@ -69,7 +70,7 @@ Result found in data/resultsFP
 
 Adaptive step, no create/ merge (NCM)
 
-Run from RStudio in AdaptiveETBayes project
+Source from RStudio in AdaptiveETBayes project
 
 preprocessing3clusterAdaptive/clusterSequencesGLRSlidingWindowNCM.R
 
@@ -77,14 +78,14 @@ Result found in data/resultsNCM
 
 Adaptive step, switch preprocessing (SP)
 
-Run from RStudio in AdaptiveETBayes project
+Source from RStudio in AdaptiveETBayes project
 
 preprocessing3clusterAdaptive/clusterSequencesGLRSlidingWindowSP.R
 
 Result found in data/resultsSP
 
 # Generate sequential lines for ground truth and estimated distributions (Fig 3)
-Run from RStudio in AdaptiveETBayes project
+Source from RStudio in AdaptiveETBayes project
 
 evaluationFigures/exportDistrLines.R
 
@@ -97,7 +98,7 @@ data/toLatexDistrLinesNCM
 data/toLatexDistrLinesSP
 
 # Calculate KL divergence and generate lines for graphs (Fig 3)
-Run from RStudio in AdaptiveETBayes project
+Source from RStudio in AdaptiveETBayes project
 
 evaluationFigures/KLDivCalcSequence.R
 
